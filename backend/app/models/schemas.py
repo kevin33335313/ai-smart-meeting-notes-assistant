@@ -37,6 +37,7 @@ class ReactFlowMindMap(BaseModel):
 # 筆記結果模型
 class NoteResult(BaseModel):
     content_blocks: List[ContentBlock]
+    action_items: List[ActionItem] = []  # 待辦事項列表
     mindmap_structure: Optional[Union[MindMapNode, ReactFlowMindMap, Dict[str, Any]]] = None
 
 # 任務狀態回應模型

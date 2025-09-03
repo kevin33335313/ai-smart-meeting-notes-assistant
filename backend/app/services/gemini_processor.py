@@ -6,7 +6,7 @@ from typing import Dict, Any
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-from ..models.schemas import NoteResult, ReactFlowMindMap, ContentBlock
+from ..models.schemas import NoteResult, ReactFlowMindMap, ContentBlock, ActionItem
 
 # 載入環境變數並設定 Gemini API
 load_dotenv()
@@ -37,30 +37,46 @@ async def process_audio_with_gemini(audio_file_path: str) -> NoteResult:
 
     # 定義結構化 Prompt
     prompt = """
-你是一位頂尖的產品設計師與內容架構師。請仔細聆聽並分析這段會議音訊，並將其內容，解構成一個由多個「內容區塊」(Content Blocks) 組成的 JSON 陣列。
+你是一位頂尖的產品設計師與內容架構師。請仔細聆聽並分析這段會議音訊，並將其內容解構成結構化的 JSON 格式。
 
-目標： 輸出的 JSON 要能被前端直接渲染成一個類似 Notion 的精美頁面。
+請輸出包含以下兩個主要部分的 JSON：
+
+1. "content_blocks": 內容區塊陣列，用於渲染類似 Notion 的精美頁面
+2. "action_items": 待辦事項陣列，提取會議中的任務和行動項目
 
 區塊類型定義：
-- heading_2: H2 標題，用於主要段落標題。
-- bullet_list: 無序列表，用於條列重點。
-- toggle_list: 可折疊列表，用於隱藏次要細節，保持頁面整潔。
-- callout: 引言框，用於強調最重要的結論、決策或警告。
-- code: 程式碼區塊，用於呈現程式碼範例。
+- heading_2: H2 標題
+- bullet_list: 無序列表
+- toggle_list: 可折疊列表
+- callout: 引言框，用於強調重要結論
+- code: 程式碼區塊
 
-JSON 輸出結構：
-輸出的 JSON 必須是一個陣列，每個物件代表一個區塊，且必須包含 type 和 content 兩個欄位。
+輸出格式：
+{
+  "content_blocks": [
+    {
+      "type": "heading_2",
+      "content": {"text": "標題文字"}
+    },
+    {
+      "type": "bullet_list",
+      "content": {"items": ["項目1", "項目2"]}
+    },
+    {
+      "type": "callout",
+      "content": {"icon": "📋", "style": "info", "text": "重要資訊"}
+    }
+  ],
+  "action_items": [
+    {
+      "task": "任務描述",
+      "owner": "負責人姓名",
+      "due_date": "截止日期 (YYYY-MM-DD 格式)"
+    }
+  ]
+}
 
-type: 字串，必須是上述定義的區塊類型之一。
-
-content: 根據 type 的不同，格式如下：
-- heading_2: 一個包含 text 的物件。
-- bullet_list: 一個包含 items (字串陣列) 的物件。
-- toggle_list: 一個包含 summary (標題) 和 details (內容) 的物件。
-- callout: 一個包含 icon (Emoji), style ('info', 'warning', 'success'), 和 text 的物件。
-- code: 一個包含 language 和 text 的物件。
-
-請直接輸出 JSON 陣列，不要包含 Markdown 語法。
+請直接輸出 JSON，不要包含 Markdown 語法。
     """
 
     # 建立模型並發送請求
@@ -81,7 +97,14 @@ content: 根據 type 的不同，格式如下：
     print(f"Cleaned JSON: {cleaned_json_string[:500]}...")  # 顯示前500字符用於調試
     
     try:
-        content_blocks = json.loads(cleaned_json_string)
+        parsed_data = json.loads(cleaned_json_string)
+        # 確保有必要的欄位
+        content_blocks = parsed_data.get('content_blocks', [])
+        action_items_data = parsed_data.get('action_items', [])
+        
+        # 轉換待辦事項為 ActionItem 物件
+        action_items = [ActionItem(**item) for item in action_items_data]
+        
     except json.JSONDecodeError as e:
         print(f"JSON decode error: {e}")
         print(f"Problematic JSON around position {e.pos}: {cleaned_json_string[max(0, e.pos-50):e.pos+50]}")
@@ -91,11 +114,15 @@ content: 根據 type 的不同，格式如下：
         import re
         fixed_json = re.sub(r',\s*}', '}', fixed_json)
         fixed_json = re.sub(r',\s*]', ']', fixed_json)
-        content_blocks = json.loads(fixed_json)
+        parsed_data = json.loads(fixed_json)
+        content_blocks = parsed_data.get('content_blocks', [])
+        action_items_data = parsed_data.get('action_items', [])
+        action_items = [ActionItem(**item) for item in action_items_data]
     
     # 轉換為 Pydantic 模型
     return NoteResult(
         content_blocks=content_blocks,
+        action_items=action_items,
         mindmap_structure=None
     )
 

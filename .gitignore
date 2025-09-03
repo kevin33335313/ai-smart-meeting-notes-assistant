@@ -1,0 +1,109 @@
+# 依賴套件
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 環境變數文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js 建置文件
+.next/
+out/
+build/
+dist/
+
+# 日誌文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 運行時數據
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 臨時文件
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# 編輯器和 IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 作業系統生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 本地上傳文件夾
+backend/local_uploads/
+uploads/
+temp_uploads/
+
+# 測試覆蓋率報告
+coverage/
+.nyc_output/
+
+# 快取文件
+.cache/
+.parcel-cache/
+
+# TypeScript 編譯輸出
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.test
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*

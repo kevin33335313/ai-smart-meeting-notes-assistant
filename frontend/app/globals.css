@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 自定義動畫 */
+@keyframes fade-in-out {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.animate-fade-in-out {
+  animation: fade-in-out 2s ease-in-out infinite;
+}
+
+/* 改善閱讀體驗的字體設定 */
+.prose {
+  line-height: 1.7;
+}
+
+.prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* 平滑過渡效果 */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* 字體大小變數 */
+[data-font-size="small"] {
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 28px;
+}
+
+[data-font-size="medium"] {
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 28px;
+  --font-size-3xl: 32px;
+}
+
+[data-font-size="large"] {
+  --font-size-base: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 36px;
+}
+
+/* 主題變數 */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border-color: #374151;
+}
+
+/* 應用變數到元素 */
+.prose {
+  font-size: var(--font-size-base, 16px);
+  color: var(--text-primary, #1f2937);
+}
+
+.prose h2 {
+  font-size: var(--font-size-2xl, 28px);
+}
+
+.prose h3 {
+  font-size: var(--font-size-xl, 24px);
+}
+
+.prose h4 {
+  font-size: var(--font-size-lg, 18px);
+}

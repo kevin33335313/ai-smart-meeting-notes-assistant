@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@blocknote/core": "^0.37.0",
+    "@blocknote/react": "^0.37.0",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "react-markdown": "^10.1.0",
+    "reactflow": "^11.11.4",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16"
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "content_blocks": [
+    {
+      "type": "callout",
+      "content": {
+        "icon": "🎯",
+        "style": "success",
+        "text": "【會議核心摘要】台灣疫情已進入可漸進開放階段，本次會議將正常進行，但仍需謹慎防疫並注意個人健康。會議在愉快氛圍中即將正式開始。"
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "台灣疫情現況評估"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "台灣的疫情狀況：",
+          "  目前已達到一個可以漸進開放的階段。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議進行方針與防疫要求"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "會議召開方式：",
+          "  本次會議將正常召開。",
+          "防疫措施：",
+          "  與會者仍需保持謹慎的防疫態度。",
+          "個人健康維護：",
+          "  請所有與會人員務必保持身體健康。"
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "content": {
+        "icon": "⚠️",
+        "style": "warning",
+        "text": "儘管疫情趨緩，仍強調防疫的重要性及個人健康管理。"
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議氣氛與正式開始"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "會議展望：",
+          "  本次會議被視為一件令人愉快的事情。",
+          "會議啟動：",
+          "  會議即將正式開始進行。"
+        ]
+      }
+    }
+  ],
+  "action_items": [],
+  "mindmap_structure": {
+    "nodes": [
+      {
+        "id": "root",
+        "data": {
+          "label": "會議啟動與防疫須知",
+          "level": 0,
+          "color": "#1e293b",
+          "textColor": "#ffffff"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "branch1",
+        "data": {
+          "label": "台灣疫情現況",
+          "level": 1,
+          "color": "#ef4444",
+          "textColor": "#ffffff"
+        },
+        "position": {
+          "x": 200,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_branch1_1",
+        "data": {
+          "label": "疫情狀況評估",
+          "level": 2,
+          "color": "#fca5a5",
+          "textColor": "#000000"
+        },
+        "position": {
+          "x": 350,
+          "y": -50
+        }
+      },
+      {
+        "id": "sub_branch1_2",
+        "data": {
+          "label": "漸進開放階段",
+          "level": 2,
+          "color": "#fca5a5",
+          "textColor": "#000000"
+        },
+        "position": {
+          "x": 350,
+          "y": 50
+        }
+      },
+      {
+        "id": "branch2",
+        "data": {
+          "label": "會議進行方針",
+          "level": 1,
+          "color": "#3b82f6",
+          "textColor": "#ffffff"
+        },
+        "position": {
+          "x": 141,
+          "y": 141
+        }
+      },
+      {
+        "id": "sub_branch2_1",
+        "data": {
+          "label": "本次正常召開",
+          "level": 2,
+          "color": "#93c5fd",
+          "textColor": "#000000"
+        },
+        "position": {
+          "x": 241,
+          "y": 241
+        }
+      },
+      {
+        "id": "branch3",
+        "data": {
+          "label": "防疫措施要求",
+          "level": 1,
+          "color": "#22c55e",
+          "textColor": "#ffffff"
+        },
+        "position": {
+          "x": -141,
+          "y": 141
+        }
+      },
+      {
+        "id": "sub_branch3_1",
+        "data": {
+          "label": "保持謹慎態度",
+          "level": 2,
+          "color": "#86efac",
+          "textColor": "#000000"
+        },
+        "position": {
+          "x": -241,
+          "y": 241
+        }
+      },
+      {
+        "id": "sub_branch3_2",
+        "data": {
+          "label": "個人健康維護",
+          "level": 2,
+          "color": "#86efac",
+          "textColor": "#000000"
+        },
+        "position": {
+          "x": -241,
+          "y": 141
+        }
+      },
+      {
+        "id": "branch4",
+        "data": {
+          "label": "會議氣氛與展望",
+          "level": 1,
+          "color": "#eab308",
+          "textColor": "#ffffff"
+        },
+        "position": {
+          "x": -200,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_branch4_1",
+        "data": {
+          "label": "愉快氛圍",
+          "level": 2,
+          "color": "#fde047",
+          "textColor": "#000000"
+        },
+        "position": {
+          "x": -350,
+          "y": -50
+        }
+      },
+      {
+        "id": "sub_branch4_2",
+        "data": {
+          "label": "即將正式開始",
+          "level": 2,
+          "color": "#fde047",
+          "textColor": "#000000"
+        },
+        "position": {
+          "x": -350,
+          "y": 50
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-root-branch1",
+        "source": "root",
+        "target": "branch1"
+      },
+      {
+        "id": "edge-branch1-sub1_1",
+        "source": "branch1",
+        "target": "sub_branch1_1"
+      },
+      {
+        "id": "edge-branch1-sub1_2",
+        "source": "branch1",
+        "target": "sub_branch1_2"
+      },
+      {
+        "id": "edge-root-branch2",
+        "source": "root",
+        "target": "branch2"
+      },
+      {
+        "id": "edge-branch2-sub2_1",
+        "source": "branch2",
+        "target": "sub_branch2_1"
+      },
+      {
+        "id": "edge-root-branch3",
+        "source": "root",
+        "target": "branch3"
+      },
+      {
+        "id": "edge-branch3-sub3_1",
+        "source": "branch3",
+        "target": "sub_branch3_1"
+      },
+      {
+        "id": "edge-branch3-sub3_2",
+        "source": "branch3",
+        "target": "sub_branch3_2"
+      },
+      {
+        "id": "edge-root-branch4",
+        "source": "root",
+        "target": "branch4"
+      },
+      {
+        "id": "edge-branch4-sub4_1",
+        "source": "branch4",
+        "target": "sub_branch4_1"
+      },
+      {
+        "id": "edge-branch4-sub4_2",
+        "source": "branch4",
+        "target": "sub_branch4_2"
+      }
+    ]
+  },
+  "markdown_mindmap": null,
+  "usage_report": {
+    "task_id": "d4b75cf6-fc19-4fc1-b575-ce688ebdd46f",
+    "service_type": "meeting-notes",
+    "timestamp": "2025-09-16T14:19:55.433312",
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 468,
+      "audio_input_tokens": 1825,
+      "image_count": null
+    },
+    "cost_calculation": {
+      "input_cost": 0.0,
+      "output_cost": 0.000585,
+      "audio_cost": 0.000913,
+      "image_cost": 0.0,
+      "total_cost": 0.001498
+    }
+  }
+}

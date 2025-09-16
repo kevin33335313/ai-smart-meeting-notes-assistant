@@ -1,0 +1,326 @@
+{
+  "content_blocks": [
+    {
+      "type": "callout",
+      "content": {
+        "icon": "🎯",
+        "style": "success",
+        "text": "【會議核心摘要】本次會議確認台灣疫情已達可逐步開放階段，會議將正常進行。與會者仍需謹慎防疫並注意個人健康。會議召開氣氛愉快，並隨即開始。"
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "台灣疫情現況評估"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "疫情發展階段：發言人表示，台灣的疫情已達到一個可以漸漸開放的階段。",
+          "  此評估為今日會議正常進行的基礎考量。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議進行方式與防疫要求"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "會議狀態：本次會議將按照正常模式進行。",
+          "防疫措施：",
+          "  儘管疫情趨緩，仍需小心謹慎地進行防疫工作。",
+          "  請所有與會人員務必保持身體健康。"
+        ]
+      }
+    },
+    {
+      "type": "toggle_list",
+      "content": {
+        "summary": "會議背景與注意事項",
+        "details": {
+          "type": "bullet_list",
+          "items": [
+            "疫情趨勢：疫情已趨於穩定，允許社會活動逐步恢復正常。",
+            "個人責任：強調在逐步開放的階段，個人健康管理與防疫意識的重要性。",
+            "會議目的：在確保防疫的前提下，恢復正常的會議運作。"
+          ]
+        }
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議氣氛與啟動"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "與會者心情：發言人表示，能夠在當前情況下正常開會，是一件非常快樂的事情。",
+          "會議啟動：隨即宣布會議正式開始。"
+        ]
+      }
+    }
+  ],
+  "action_items": [
+    {
+      "task": "全體與會人員持續注意個人防疫措施",
+      "owner": "全體與會者",
+      "due_date": "無特定期限"
+    },
+    {
+      "task": "全體與會人員保持身體健康",
+      "owner": "全體與會者",
+      "due_date": "無特定期限"
+    }
+  ],
+  "mindmap_structure": {
+    "nodes": [
+      {
+        "id": "root",
+        "data": {
+          "label": "會議核心摘要",
+          "level": 0,
+          "color": "#1e293b"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "branch1",
+        "data": {
+          "label": "台灣疫情現況評估",
+          "level": 1,
+          "color": "#ef4444"
+        },
+        "position": {
+          "x": -250,
+          "y": -150
+        }
+      },
+      {
+        "id": "sub1_1",
+        "data": {
+          "label": "疫情發展階段：逐步開放",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": -400,
+          "y": -200
+        }
+      },
+      {
+        "id": "sub1_2",
+        "data": {
+          "label": "會議正常進行基礎考量",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": -400,
+          "y": -100
+        }
+      },
+      {
+        "id": "branch2",
+        "data": {
+          "label": "會議進行與防疫要求",
+          "level": 1,
+          "color": "#3b82f6"
+        },
+        "position": {
+          "x": 250,
+          "y": -150
+        }
+      },
+      {
+        "id": "sub2_1",
+        "data": {
+          "label": "會議狀態：正常模式",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": 400,
+          "y": -250
+        }
+      },
+      {
+        "id": "sub2_2",
+        "data": {
+          "label": "防疫措施：謹慎進行",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": 400,
+          "y": -150
+        }
+      },
+      {
+        "id": "sub2_3",
+        "data": {
+          "label": "個人健康：務必保持",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": 400,
+          "y": -50
+        }
+      },
+      {
+        "id": "branch3",
+        "data": {
+          "label": "會議氣氛與啟動",
+          "level": 1,
+          "color": "#22c55e"
+        },
+        "position": {
+          "x": 250,
+          "y": 150
+        }
+      },
+      {
+        "id": "sub3_1",
+        "data": {
+          "label": "與會者心情：非常愉快",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": 400,
+          "y": 100
+        }
+      },
+      {
+        "id": "sub3_2",
+        "data": {
+          "label": "正常開會：令人高興",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": 400,
+          "y": 200
+        }
+      },
+      {
+        "id": "branch4",
+        "data": {
+          "label": "會議正式啟動",
+          "level": 1,
+          "color": "#f59e0b"
+        },
+        "position": {
+          "x": -250,
+          "y": 150
+        }
+      },
+      {
+        "id": "sub4_1",
+        "data": {
+          "label": "隨即宣布：會議開始",
+          "level": 2,
+          "color": "#f3f4f6"
+        },
+        "position": {
+          "x": -400,
+          "y": 150
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-root-branch1",
+        "source": "root",
+        "target": "branch1"
+      },
+      {
+        "id": "edge-root-branch2",
+        "source": "root",
+        "target": "branch2"
+      },
+      {
+        "id": "edge-root-branch3",
+        "source": "root",
+        "target": "branch3"
+      },
+      {
+        "id": "edge-root-branch4",
+        "source": "root",
+        "target": "branch4"
+      },
+      {
+        "id": "edge-branch1-sub1_1",
+        "source": "branch1",
+        "target": "sub1_1"
+      },
+      {
+        "id": "edge-branch1-sub1_2",
+        "source": "branch1",
+        "target": "sub1_2"
+      },
+      {
+        "id": "edge-branch2-sub2_1",
+        "source": "branch2",
+        "target": "sub2_1"
+      },
+      {
+        "id": "edge-branch2-sub2_2",
+        "source": "branch2",
+        "target": "sub2_2"
+      },
+      {
+        "id": "edge-branch2-sub2_3",
+        "source": "branch2",
+        "target": "sub2_3"
+      },
+      {
+        "id": "edge-branch3-sub3_1",
+        "source": "branch3",
+        "target": "sub3_1"
+      },
+      {
+        "id": "edge-branch3-sub3_2",
+        "source": "branch3",
+        "target": "sub3_2"
+      },
+      {
+        "id": "edge-branch4-sub4_1",
+        "source": "branch4",
+        "target": "sub4_1"
+      }
+    ]
+  },
+  "markdown_mindmap": null,
+  "usage_report": {
+    "task_id": "fd2f50bd-71f6-42c5-9ae1-81622b4579db",
+    "service_type": "meeting-notes",
+    "timestamp": "2025-09-16T14:12:52.628872",
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 677,
+      "audio_input_tokens": 1825,
+      "image_count": null
+    },
+    "cost_calculation": {
+      "input_cost": 0.0,
+      "output_cost": 0.000846,
+      "audio_cost": 0.000913,
+      "image_cost": 0.0,
+      "total_cost": 0.001759
+    }
+  }
+}

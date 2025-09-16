@@ -1,0 +1,30 @@
+{
+  "total": {
+    "input": 250098,
+    "output": 37386,
+    "cost": 0.49955250000000007
+  },
+  "services": {
+    "invoice_ocr": {
+      "input": 22298,
+      "output": 2418,
+      "cost": 0.0399625,
+      "audio_input": 0,
+      "image_count": 11
+    },
+    "legacy": {
+      "input": 29339,
+      "output": 2590,
+      "cost": 0.04962375,
+      "audio_input": 0,
+      "image_count": 0
+    },
+    "meeting-notes": {
+      "input": 198461,
+      "output": 32378,
+      "cost": 0.40996625000000003,
+      "audio_input": 0,
+      "image_count": 0
+    }
+  }
+}

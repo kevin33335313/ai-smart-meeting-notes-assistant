@@ -1,113 +1,103 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Mic, FileText, Brain, Sparkles } from "lucide-react"
+import { Mic, Wand2, MessageSquare, Receipt } from "lucide-react"
 
-// AI工具數據
 const aiTools = [
   {
     id: "meeting-notes",
     title: "AI 智慧會議筆記",
     description: "上傳會議錄音，自動生成摘要、待辦事項與心智圖",
-    icon: <Mic className="h-8 w-8" />,
-    color: "from-blue-500 to-indigo-600",
+    icon: <Mic className="h-6 w-6" />,
+    bgColor: "bg-emerald-500",
+    buttonColor: "bg-emerald-500 hover:bg-emerald-600",
     href: "/tools/meeting-notes",
-    status: "available"
+    status: "可立即使用"
   },
   {
-    id: "document-analyzer",
-    title: "文件智能分析",
-    description: "分析PDF、Word文件，提取關鍵信息和洞察",
-    icon: <FileText className="h-8 w-8" />,
-    color: "from-green-500 to-emerald-600",
-    href: "/tools/document-analyzer",
-    status: "coming-soon"
+    id: "poster-generator", 
+    title: "AI 智能海報生成器",
+    description: "結合文字內容與上傳圖片，智能生成專業海報",
+    icon: <Wand2 className="h-6 w-6" />,
+    bgColor: "bg-blue-500",
+    buttonColor: "bg-blue-500 hover:bg-blue-600", 
+    href: "/tools/poster-generator",
+    status: "可立即使用"
   },
   {
-    id: "ai-brainstorm",
-    title: "AI 創意發想",
-    description: "與AI協作進行頭腦風暴，激發創新想法",
-    icon: <Brain className="h-8 w-8" />,
-    color: "from-purple-500 to-violet-600",
-    href: "/tools/ai-brainstorm",
-    status: "coming-soon"
+    id: "rag-system",
+    title: "RAG 文件問答系統", 
+    description: "上傳多個文件，智能問答、摘要生成與測驗功能",
+    icon: <MessageSquare className="h-6 w-6" />,
+    bgColor: "bg-purple-500",
+    buttonColor: "bg-purple-500 hover:bg-purple-600",
+    href: "/rag-chat",
+    status: "可立即使用"
   },
   {
-    id: "content-generator",
-    title: "智能內容生成",
-    description: "生成文章、郵件、社交媒體內容等",
-    icon: <Sparkles className="h-8 w-8" />,
-    color: "from-orange-500 to-red-600",
-    href: "/tools/content-generator",
-    status: "coming-soon"
+    id: "invoice-manager",
+    title: "AI 智能發票管理",
+    description: "自動識別發票資訊，智能分類與統計分析", 
+    icon: <Receipt className="h-6 w-6" />,
+    bgColor: "bg-orange-500",
+    buttonColor: "bg-orange-500 hover:bg-orange-600",
+    href: "/tools/invoice-manager", 
+    status: "可立即使用"
   }
 ]
 
-// 主頁面組件
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12 px-4">
-      <div className="container mx-auto max-w-6xl">
-        {/* 頁面標題 */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            AI 工具箱
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
+      {/* 主要內容區域 */}
+      <div className="container mx-auto px-4 py-16">
+        {/* 標題區域 */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold text-gray-800 mb-4">
+            🤖 AI 智能工具箱
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            探索強大的AI工具集合，提升您的工作效率與創造力
+          <p className="text-xl text-gray-600 mb-6">
+            探索強大的 AI 工具集合，讓人工智能成為您的得力助手
           </p>
+          <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
+            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span>4 個工具可用，更多功能開發中</span>
+          </div>
         </div>
 
-        {/* 工具網格 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {/* 工具卡片網格 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {aiTools.map((tool) => (
-            <Card key={tool.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
-              <div className={`h-2 bg-gradient-to-r ${tool.color}`}></div>
-              
+            <Card key={tool.id} className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-4">
-                  <div className={`p-3 rounded-xl bg-gradient-to-r ${tool.color} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`${tool.bgColor} p-3 rounded-xl text-white shadow-md group-hover:scale-105 transition-transform duration-200`}>
                     {tool.icon}
                   </div>
-                  <div>
-                    <CardTitle className="text-xl font-bold text-gray-900">
+                  <div className="flex-1">
+                    <CardTitle className="text-lg font-semibold text-gray-800">
                       {tool.title}
                     </CardTitle>
-                    {tool.status === "coming-soon" && (
-                      <span className="inline-block px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full mt-1">
-                        即將推出
-                      </span>
-                    )}
+                    <div className="text-xs text-green-600 font-medium mt-1">
+                      {tool.status}
+                    </div>
                   </div>
                 </div>
               </CardHeader>
               
               <CardContent className="pt-0">
-                <CardDescription className="text-gray-600 mb-6 text-base leading-relaxed">
+                <CardDescription className="text-gray-600 mb-6 leading-relaxed">
                   {tool.description}
                 </CardDescription>
                 
-                {tool.status === "available" ? (
-                  <Link href={tool.href}>
-                    <Button className={`w-full bg-gradient-to-r ${tool.color} hover:opacity-90 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300`}>
-                      開始使用
-                    </Button>
-                  </Link>
-                ) : (
-                  <Button disabled className="w-full bg-gray-200 text-gray-500 cursor-not-allowed">
-                    敬請期待
+                <Link href={tool.href}>
+                  <Button className={`w-full ${tool.buttonColor} text-white font-medium transition-colors duration-200`}>
+                    開始使用 →
                   </Button>
-                )}
+                </Link>
               </CardContent>
             </Card>
           ))}
-        </div>
-        
-        {/* 底部信息 */}
-        <div className="text-center mt-16">
-          <p className="text-gray-500">
-            更多AI工具正在開發中，敬請期待！
-          </p>
         </div>
       </div>
     </div>

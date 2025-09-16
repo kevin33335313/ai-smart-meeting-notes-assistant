@@ -1,0 +1,84 @@
+{
+  "content_blocks": [
+    {
+      "type": "callout",
+      "content": {
+        "icon": "🎯",
+        "style": "success",
+        "text": "【會議核心摘要】臺灣疫情已進入可逐步開放階段，本次會議將正常舉行，同時強調持續謹慎防疫與維護個人健康。"
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "臺灣疫情現況評估"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "臺灣的疫情發展已達到一個可以漸進式開放的階段。",
+          "  此階段表示社會活動與日常運作可望逐步恢復正常。"
+        ]
+      }
+    },
+    {
+      "type": "toggle_list",
+      "content": {
+        "summary": "疫情開放階段的考量",
+        "details": {
+          "type": "bullet_list",
+          "items": [
+            "疫情趨勢穩定，為逐步解封提供基礎。",
+            "開放策略將採漸進方式，以確保風險可控，避免疫情反彈。"
+          ]
+        }
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議進行方式與防疫措施"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "本次會議將正常舉行，不因疫情而延遲或取消。",
+          "  儘管疫情已進入開放階段，仍需持續小心謹慎地進行防疫工作。",
+          "  所有與會者務必保持身體健康，共同維護會議環境的安全與衛生。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議氣氛與展望"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "本次會議被視為一件令人愉快的事情，展現積極正向的態度。",
+          "會議即將正式開始，期待順利進行並達成預期目標。"
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "content": {
+        "icon": "⚠️",
+        "style": "warning",
+        "text": "【重要提醒】在疫情逐步開放的同時，個人防疫措施與健康管理仍是首要之務，請大家務必遵守相關規定，共同維護公共健康。"
+      }
+    }
+  ],
+  "action_items": [],
+  "mindmap_structure": null,
+  "usage_report": {
+    "task_id": "da8c659b-6f57-42dc-af65-f6ab774c7010",
+    "service_type": "meeting_notes",
+    "timestamp": 

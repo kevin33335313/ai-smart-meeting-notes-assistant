@@ -1,0 +1,385 @@
+{
+  "content_blocks": [
+    {
+      "type": "callout",
+      "content": {
+        "icon": "🎯",
+        "style": "success",
+        "text": "【會議核心摘要】臺灣疫情已達穩健開放階段，本次會議將正常進行，同時強調持續防疫與保持健康的重要性。會議在積極愉快的氛圍中正式開始。"
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "臺灣疫情現況評估"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "疫情發展階段：目前臺灣的疫情狀況，已達到一個可以穩健開放的階段。",
+          "  此評估為會議進行方式奠定基礎，允許日常活動逐步恢復。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議進行方式與防疫要求"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "會議模式：本次會議將按照正常程序進行。",
+          "防疫措施：儘管疫情趨緩，仍需小心謹慎地執行防疫工作。",
+          "  與會者被提醒應持續保持警惕，不鬆懈防疫規範。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "與會者健康與會議氛圍"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "健康提醒：請所有與會者務必保持身體健康。",
+          "  這是確保會議順利進行及個人福祉的重要前提。",
+          "會議氛圍：本次會議被視為一件非常快樂的事情。",
+          "  此積極態度有助於營造良好的討論環境。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "決策與結論"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "決策：基於臺灣疫情已達穩健開放階段的判斷，會議決定正常召開。",
+          "結論：在正常開會的同時，所有與會者仍需嚴格遵守防疫規定，並注意個人健康。會議在積極樂觀的氛圍中正式啟動。"
+        ]
+      }
+    }
+  ],
+  "action_items": [
+    {
+      "task": "依據既定議程，正式開始本次會議的討論。",
+      "owner": "全體與會者",
+      "due_date": "今日"
+    },
+    {
+      "task": "持續遵守會議期間的防疫規範，確保所有參與者的健康與安全。",
+      "owner": "全體與會者",
+      "due_date": "會議期間"
+    }
+  ],
+  "mindmap_structure": {
+    "nodes": [
+      {
+        "id": "root",
+        "data": {
+          "label": "疫情穩健開放會議",
+          "level": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategy",
+        "data": {
+          "label": "戰略決策",
+          "level": 1,
+          "direction": "right",
+          "color": "#2563eb",
+          "icon": "🎯"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategy-1",
+        "data": {
+          "label": "疫情穩健開放",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategy-2",
+        "data": {
+          "label": "會議正常召開",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategy-3",
+        "data": {
+          "label": "積極樂觀啟動",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operations",
+        "data": {
+          "label": "營運執行",
+          "level": 1,
+          "direction": "left",
+          "color": "#16a34a",
+          "icon": "🔄"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operations-1",
+        "data": {
+          "label": "正常會議模式",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operations-2",
+        "data": {
+          "label": "確保會議順暢",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk",
+        "data": {
+          "label": "風險管理",
+          "level": 1,
+          "direction": "right",
+          "color": "#ea580c",
+          "icon": "⚠️"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-1",
+        "data": {
+          "label": "疫情趨緩警惕",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-2",
+        "data": {
+          "label": "不鬆懈防疫",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-3",
+        "data": {
+          "label": "健康風險考量",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action",
+        "data": {
+          "label": "行動方針",
+          "level": 1,
+          "direction": "left",
+          "color": "#9333ea",
+          "icon": "✅"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-1",
+        "data": {
+          "label": "持續防疫工作",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-2",
+        "data": {
+          "label": "嚴守防疫規範",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-3",
+        "data": {
+          "label": "注意個人健康",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-root-strategy",
+        "source": "root",
+        "target": "strategy"
+      },
+      {
+        "id": "edge-strategy-1",
+        "source": "strategy",
+        "target": "strategy-1"
+      },
+      {
+        "id": "edge-strategy-2",
+        "source": "strategy",
+        "target": "strategy-2"
+      },
+      {
+        "id": "edge-strategy-3",
+        "source": "strategy",
+        "target": "strategy-3"
+      },
+      {
+        "id": "edge-root-operations",
+        "source": "root",
+        "target": "operations"
+      },
+      {
+        "id": "edge-operations-1",
+        "source": "operations",
+        "target": "operations-1"
+      },
+      {
+        "id": "edge-operations-2",
+        "source": "operations",
+        "target": "operations-2"
+      },
+      {
+        "id": "edge-root-risk",
+        "source": "root",
+        "target": "risk"
+      },
+      {
+        "id": "edge-risk-1",
+        "source": "risk",
+        "target": "risk-1"
+      },
+      {
+        "id": "edge-risk-2",
+        "source": "risk",
+        "target": "risk-2"
+      },
+      {
+        "id": "edge-risk-3",
+        "source": "risk",
+        "target": "risk-3"
+      },
+      {
+        "id": "edge-root-action",
+        "source": "root",
+        "target": "action"
+      },
+      {
+        "id": "edge-action-1",
+        "source": "action",
+        "target": "action-1"
+      },
+      {
+        "id": "edge-action-2",
+        "source": "action",
+        "target": "action-2"
+      },
+      {
+        "id": "edge-action-3",
+        "source": "action",
+        "target": "action-3"
+      }
+    ]
+  },
+  "usage_report": {
+    "task_id": "e3eb96d5-433e-4611-8e53-787b2496d943",
+    "service_type": "meeting_notes",
+    "timestamp": "2025-09-11T13:33:39.416303",
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 709,
+      "audio_input_tokens": 1825,
+      "image_count": null
+    },
+    "cost_calculation": {
+      "input_cost": 0.0,
+      "output_cost": 0.000886,
+      "audio_cost": 0.000913,
+      "image_cost": 0.0,
+      "total_cost": 0.001799
+    }
+  }
+}

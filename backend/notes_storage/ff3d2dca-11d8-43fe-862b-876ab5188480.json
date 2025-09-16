@@ -1,0 +1,351 @@
+{
+  "content_blocks": [
+    {
+      "type": "callout",
+      "content": {
+        "icon": "🎯",
+        "style": "success",
+        "text": "【會議核心摘要】本次會議確認台灣疫情已進入可逐步開放階段，會議將正常進行，但仍強調需持續謹慎防疫並維護個人健康。"
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "台灣疫情現況評估"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "疫情發展階段：台灣的疫情已達到一個可以漸漸開放的階段。",
+          "  政策方向：顯示未來將朝向逐步放寬限制的方向發展。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議進行方式與防疫要求"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "會議形式：今日會議將正常召開。",
+          "防疫措施：儘管疫情趨緩，仍需小心謹慎地進行防疫。",
+          "健康維護：請所有與會人員務必保持身體健康。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議氣氛與啟動"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "會議氛圍：本次會議被視為一件非常愉快的事情。",
+          "會議啟動：發言人隨即宣布會議正式開始。"
+        ]
+      }
+    }
+  ],
+  "action_items": [],
+  "mindmap_structure": {
+    "nodes": [
+      {
+        "id": "root",
+        "data": {
+          "label": "台灣疫情與會議安排",
+          "level": 0,
+          "color": "#1e293b"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "core_summary",
+        "data": {
+          "label": "會議核心摘要",
+          "level": 1,
+          "color": "#ef4444"
+        },
+        "position": {
+          "x": -250,
+          "y": -200
+        }
+      },
+      {
+        "id": "cs_open_phase",
+        "data": {
+          "label": "疫情進入逐步開放階段",
+          "level": 2,
+          "color": "#ef4444"
+        },
+        "position": {
+          "x": -450,
+          "y": -250
+        }
+      },
+      {
+        "id": "cs_meeting_normal",
+        "data": {
+          "label": "會議將正常進行",
+          "level": 2,
+          "color": "#ef4444"
+        },
+        "position": {
+          "x": -450,
+          "y": -150
+        }
+      },
+      {
+        "id": "cs_caution_prevention",
+        "data": {
+          "label": "持續謹慎防疫",
+          "level": 2,
+          "color": "#ef4444"
+        },
+        "position": {
+          "x": -50,
+          "y": -250
+        }
+      },
+      {
+        "id": "cs_personal_health",
+        "data": {
+          "label": "維護個人健康",
+          "level": 2,
+          "color": "#ef4444"
+        },
+        "position": {
+          "x": -50,
+          "y": -150
+        }
+      },
+      {
+        "id": "current_situation",
+        "data": {
+          "label": "台灣疫情現況評估",
+          "level": 1,
+          "color": "#22c55e"
+        },
+        "position": {
+          "x": 250,
+          "y": -200
+        }
+      },
+      {
+        "id": "cs_dev_phase",
+        "data": {
+          "label": "疫情發展階段：可漸漸開放",
+          "level": 2,
+          "color": "#22c55e"
+        },
+        "position": {
+          "x": 50,
+          "y": -250
+        }
+      },
+      {
+        "id": "cs_policy_direction",
+        "data": {
+          "label": "政策方向：逐步放寬限制",
+          "level": 2,
+          "color": "#22c55e"
+        },
+        "position": {
+          "x": 50,
+          "y": -150
+        }
+      },
+      {
+        "id": "meeting_arrangements",
+        "data": {
+          "label": "會議進行與防疫要求",
+          "level": 1,
+          "color": "#3b82f6"
+        },
+        "position": {
+          "x": -250,
+          "y": 200
+        }
+      },
+      {
+        "id": "ma_meeting_form",
+        "data": {
+          "label": "會議形式：今日正常召開",
+          "level": 2,
+          "color": "#3b82f6"
+        },
+        "position": {
+          "x": -450,
+          "y": 150
+        }
+      },
+      {
+        "id": "ma_prevention_measures",
+        "data": {
+          "label": "防疫措施：仍需小心謹慎",
+          "level": 2,
+          "color": "#3b82f6"
+        },
+        "position": {
+          "x": -450,
+          "y": 250
+        }
+      },
+      {
+        "id": "ma_health_maintenance",
+        "data": {
+          "label": "健康維護：務必保持",
+          "level": 2,
+          "color": "#3b82f6"
+        },
+        "position": {
+          "x": -50,
+          "y": 200
+        }
+      },
+      {
+        "id": "meeting_start_atmosphere",
+        "data": {
+          "label": "會議氣氛與啟動",
+          "level": 1,
+          "color": "#f97316"
+        },
+        "position": {
+          "x": 250,
+          "y": 200
+        }
+      },
+      {
+        "id": "msa_atmosphere",
+        "data": {
+          "label": "會議氛圍：非常愉快",
+          "level": 2,
+          "color": "#f97316"
+        },
+        "position": {
+          "x": 50,
+          "y": 150
+        }
+      },
+      {
+        "id": "msa_start",
+        "data": {
+          "label": "會議啟動：正式開始",
+          "level": 2,
+          "color": "#f97316"
+        },
+        "position": {
+          "x": 50,
+          "y": 250
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-root-core_summary",
+        "source": "root",
+        "target": "core_summary"
+      },
+      {
+        "id": "edge-core_summary-cs_open_phase",
+        "source": "core_summary",
+        "target": "cs_open_phase"
+      },
+      {
+        "id": "edge-core_summary-cs_meeting_normal",
+        "source": "core_summary",
+        "target": "cs_meeting_normal"
+      },
+      {
+        "id": "edge-core_summary-cs_caution_prevention",
+        "source": "core_summary",
+        "target": "cs_caution_prevention"
+      },
+      {
+        "id": "edge-core_summary-cs_personal_health",
+        "source": "core_summary",
+        "target": "cs_personal_health"
+      },
+      {
+        "id": "edge-root-current_situation",
+        "source": "root",
+        "target": "current_situation"
+      },
+      {
+        "id": "edge-current_situation-cs_dev_phase",
+        "source": "current_situation",
+        "target": "cs_dev_phase"
+      },
+      {
+        "id": "edge-current_situation-cs_policy_direction",
+        "source": "current_situation",
+        "target": "cs_policy_direction"
+      },
+      {
+        "id": "edge-root-meeting_arrangements",
+        "source": "root",
+        "target": "meeting_arrangements"
+      },
+      {
+        "id": "edge-meeting_arrangements-ma_meeting_form",
+        "source": "meeting_arrangements",
+        "target": "ma_meeting_form"
+      },
+      {
+        "id": "edge-meeting_arrangements-ma_prevention_measures",
+        "source": "meeting_arrangements",
+        "target": "ma_prevention_measures"
+      },
+      {
+        "id": "edge-meeting_arrangements-ma_health_maintenance",
+        "source": "meeting_arrangements",
+        "target": "ma_health_maintenance"
+      },
+      {
+        "id": "edge-root-meeting_start_atmosphere",
+        "source": "root",
+        "target": "meeting_start_atmosphere"
+      },
+      {
+        "id": "edge-meeting_start_atmosphere-msa_atmosphere",
+        "source": "meeting_start_atmosphere",
+        "target": "msa_atmosphere"
+      },
+      {
+        "id": "edge-meeting_start_atmosphere-msa_start",
+        "source": "meeting_start_atmosphere",
+        "target": "msa_start"
+      }
+    ]
+  },
+  "markdown_mindmap": null,
+  "usage_report": {
+    "task_id": "ff3d2dca-11d8-43fe-862b-876ab5188480",
+    "service_type": "meeting-notes",
+    "timestamp": "2025-09-16T14:30:54.269394",
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 427,
+      "audio_input_tokens": 1825,
+      "image_count": null
+    },
+    "cost_calculation": {
+      "input_cost": 0.0,
+      "output_cost": 0.000534,
+      "audio_cost": 0.000913,
+      "image_cost": 0.0,
+      "total_cost": 0.001446
+    }
+  }
+}

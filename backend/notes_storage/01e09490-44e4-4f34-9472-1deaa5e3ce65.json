@@ -1,0 +1,1082 @@
+{
+  "content_blocks": [
+    {
+      "type": "callout",
+      "content": {
+        "icon": "🎯",
+        "style": "success",
+        "text": "【會議核心摘要】此次會議同意調整原發性肺動脈高壓症居家靜脈注射藥物Foren功能性套組之給付點數為1500點，並將其納入明年度新科技預算。同時刪除原單組件給付項目。"
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "提案背景與現況"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "藥品與醫材名稱：",
+          "  藥物：Foren",
+          "  醫材：Smiss處理卡夾 (Smiss Chuli Card Holder) 與專用延長管 (Extension Tube)",
+          "適用疾病與治療方式：",
+          "  罕見疾病：原發性肺動脈高壓症 (Primary Pulmonary Hypertension)",
+          "  治療方式：需透過攜帶式注射幫浦，24小時不間斷將藥物注射進入靜脈血管中。",
+          "  Foren是目前唯一能增加病患存活率的藥物，為重症患者的最後一線用藥。",
+          "現行健保給付狀況：",
+          "  Smiss處理卡夾於民國89年11月1日起納入健保給付。",
+          "  現行支付點數為750點。",
+          "  目前健保收載有效品項為兩項，皆為藥瑞公司所持有。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "調高給付點數之理由"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "成本增加因素：",
+          "  近年來國際原物料成本、運輸費用上漲。",
+          "  製造成本增加。",
+          "臨床必要性與重要性：",
+          "  Foren藥物需精確劑量輸注，對原發性肺動脈高壓患者至為重要。",
+          "  卡夾需搭配專用延長管一併使用，以防止卡夾連接不當導致的逆重力注入，避免藥物過量給予。",
+          "醫材使用特性與安全性考量：",
+          "  卡夾與延長管需一併使用，可防範卡夾連接不當導致的逆重力注入。",
+          "  延長管具抗虹吸閥功能，可避免空氣進入或血液回流，確保藥物正確輸注。",
+          "  病患需每日更換一組卡夾與延長管，並自行進行藥品更換與接駁，操作複雜且需高度專業性。",
+          "  若非最後一線用藥，病患通常不願使用此治療方式，因需每日照顧傷口及換藥。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "給付點數調整方案與計算"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "廠商建議與計算方式：",
+          "  廠商建議將卡夾與延長管以「一整組」納入給付，並調高支付點數為1500點。",
+          "  同時刪除原單組件處理卡夾之特材代碼。",
+          "健保局評估與最終建議：",
+          "  根據廠商提供之成本分析表，每組進口總成本為1227元 (未含管銷費用)。",
+          "  依據醫療器材許可證函文所載，卡夾可使用於CDD幫浦上，必須配合使用內含抗虹吸閥的專用延長管。",
+          "  健保局考量浮動點值及臨床使用之必要性，依據支付標準規定，加算15%後為1599點。",
+          "  考量廠商建議支付點數為1500點，最終建議調整支付點數為1500點。",
+          "預估使用量與財務影響：",
+          "  每人每年預估使用量約400組 (考量藥品更換接駁及不可避免之耗損)。",
+          "  目前全台使用人數約6至8人。",
+          "  預估一年使用數量為2400至3200組。",
+          "  健保財務影響約為94.5萬點。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "預算來源與分類討論"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "預算來源確認：",
+          "  此次調整將使用明年度 (2025年) 的新科技預算。",
+          "  預算將從總額協商中釋放出來，並依據其所屬的款目進行支付 (新藥新科技、放寬給付規定或非協商因素)。",
+          "醫材分類釐清：",
+          "  此醫材並非「罕見疾病醫材」，而是持有一般許可證的醫材。",
+          "  健保局目前僅有一項罕見疾病醫材。",
+          "廠商成本資料透明度：",
+          "  廠商有提供成本分析資料，但未包含管銷費用。",
+          "  健保局評估時已考量其進口成本並加算合理利潤。",
+          "  廠商表示若不調整價格，將不願與醫院簽約，導致病患無法取得醫材。"
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議決議與後續行動"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "最終決議：",
+          "  同意依據說明調整現有原發性肺動脈高壓症居家靜脈注射Foren功能性套組之支付點數為1500點。",
+          "  同時刪除原單組件處理卡夾之特材代碼。",
+          "生效日期與預算歸屬：",
+          "  此決議將於明年度 (2025年) 1月1日生效。",
+          "  預算將歸屬於明年度的新科技預算。",
+          "記錄要求：",
+          "  會議記錄中需明確記載1227除以浮動點值再加15%的計算方式。"
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "content": {
+        "icon": "⚠️",
+        "style": "warning",
+        "text": "需確保明年度新科技預算足以支應此項給付調整，並持續監測其財務影響。"
+      }
+    }
+  ],
+  "action_items": [
+    {
+      "task": "將此次會議決議納入明年度健保總額協商的新科技預算項目。",
+      "owner": "健保局相關部門",
+      "due_date": "2024-12-31"
+    },
+    {
+      "task": "通知相關廠商及醫療院所關於支付點數調整及生效日期。",
+      "owner": "健保局相關部門",
+      "due_date": "2024-12-31"
+    },
+    {
+      "task": "確保會議記錄中詳細記載支付點數的計算邏輯。",
+      "owner": "會議記錄人員",
+      "due_date": "2024-10-25"
+    }
+  ],
+  "mindmap_structure": {
+    "nodes": [
+      {
+        "id": "root",
+        "data": {
+          "label": "Foren套組給付調整會議",
+          "level": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic",
+        "data": {
+          "label": "戰略目標",
+          "level": 1,
+          "direction": "right",
+          "color": "#2563eb",
+          "icon": "🎯"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-1",
+        "data": {
+          "label": "給付點數調整",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-1-1",
+        "data": {
+          "label": "新點數1500點",
+          "level": 3,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-1-2",
+        "data": {
+          "label": "納入新科技預算",
+          "level": 3,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-1-3",
+        "data": {
+          "label": "刪除單組件給付",
+          "level": 3,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-2",
+        "data": {
+          "label": "治療重要性",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-2-1",
+        "data": {
+          "label": "重症最後防線",
+          "level": 3,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-2-2",
+        "data": {
+          "label": "唯一增存活率",
+          "level": 3,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-3",
+        "data": {
+          "label": "健保策略目標",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic-3-1",
+        "data": {
+          "label": "確保用藥可近性",
+          "level": 3,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational",
+        "data": {
+          "label": "營運執行",
+          "level": 1,
+          "direction": "left",
+          "color": "#16a34a",
+          "icon": "🔄"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-1",
+        "data": {
+          "label": "給付項目內容",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-1-1",
+        "data": {
+          "label": "Foren功能性套組",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-1-2",
+        "data": {
+          "label": "卡夾與延長管",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-2",
+        "data": {
+          "label": "現行給付狀況",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-2-1",
+        "data": {
+          "label": "卡夾750點",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-2-2",
+        "data": {
+          "label": "藥瑞公司持有",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-3",
+        "data": {
+          "label": "點數計算依據",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-3-1",
+        "data": {
+          "label": "廠商成本1227元",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-3-2",
+        "data": {
+          "label": "健保局評估1599點",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-3-3",
+        "data": {
+          "label": "最終採1500點",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-4",
+        "data": {
+          "label": "醫材使用特性",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-4-1",
+        "data": {
+          "label": "每日需更換一組",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-4-2",
+        "data": {
+          "label": "防逆重力注入",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-4-3",
+        "data": {
+          "label": "具抗虹吸閥功能",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-5",
+        "data": {
+          "label": "生效與預算歸屬",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-5-1",
+        "data": {
+          "label": "2025年1月1日生效",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "operational-5-2",
+        "data": {
+          "label": "歸屬新科技預算",
+          "level": 3,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity",
+        "data": {
+          "label": "風險與機會",
+          "level": 1,
+          "direction": "right",
+          "color": "#ea580c",
+          "icon": "⚠️"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-1",
+        "data": {
+          "label": "成本上漲壓力",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-1-1",
+        "data": {
+          "label": "國際原物料上漲",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-1-2",
+        "data": {
+          "label": "運輸製造成本增",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-2",
+        "data": {
+          "label": "供應中斷風險",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-2-1",
+        "data": {
+          "label": "廠商不願簽約",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-2-2",
+        "data": {
+          "label": "病患無法取得",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-3",
+        "data": {
+          "label": "財務影響評估",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-3-1",
+        "data": {
+          "label": "預估94.5萬點",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-3-2",
+        "data": {
+          "label": "需確保預算支應",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-4",
+        "data": {
+          "label": "醫材分類釐清",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-4-1",
+        "data": {
+          "label": "非罕見疾病醫材",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-5",
+        "data": {
+          "label": "成本資料透明",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "risk-opportunity-5-1",
+        "data": {
+          "label": "未含管銷費用",
+          "level": 3,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan",
+        "data": {
+          "label": "行動計畫",
+          "level": 1,
+          "direction": "left",
+          "color": "#9333ea",
+          "icon": "✅"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-1",
+        "data": {
+          "label": "執行最終決議",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-1-1",
+        "data": {
+          "label": "調整給付點數",
+          "level": 3,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-1-2",
+        "data": {
+          "label": "刪除舊特材代碼",
+          "level": 3,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-2",
+        "data": {
+          "label": "預算管理與監測",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-2-1",
+        "data": {
+          "label": "確認預算足夠",
+          "level": 3,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-2-2",
+        "data": {
+          "label": "持續監測財務",
+          "level": 3,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-3",
+        "data": {
+          "label": "會議記錄要求",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-3-1",
+        "data": {
+          "label": "詳載計算方式",
+          "level": 3,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action-plan-3-2",
+        "data": {
+          "label": "1227/點值+15%",
+          "level": 3,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-root-strategic",
+        "source": "root",
+        "target": "strategic"
+      },
+      {
+        "id": "edge-strategic-1",
+        "source": "strategic",
+        "target": "strategic-1"
+      },
+      {
+        "id": "edge-strategic-1-1",
+        "source": "strategic-1",
+        "target": "strategic-1-1"
+      },
+      {
+        "id": "edge-strategic-1-2",
+        "source": "strategic-1",
+        "target": "strategic-1-2"
+      },
+      {
+        "id": "edge-strategic-1-3",
+        "source": "strategic-1",
+        "target": "strategic-1-3"
+      },
+      {
+        "id": "edge-strategic-2",
+        "source": "strategic",
+        "target": "strategic-2"
+      },
+      {
+        "id": "edge-strategic-2-1",
+        "source": "strategic-2",
+        "target": "strategic-2-1"
+      },
+      {
+        "id": "edge-strategic-2-2",
+        "source": "strategic-2",
+        "target": "strategic-2-2"
+      },
+      {
+        "id": "edge-strategic-3",
+        "source": "strategic",
+        "target": "strategic-3"
+      },
+      {
+        "id": "edge-strategic-3-1",
+        "source": "strategic-3",
+        "target": "strategic-3-1"
+      },
+      {
+        "id": "edge-root-operational",
+        "source": "root",
+        "target": "operational"
+      },
+      {
+        "id": "edge-operational-1",
+        "source": "operational",
+        "target": "operational-1"
+      },
+      {
+        "id": "edge-operational-1-1",
+        "source": "operational-1",
+        "target": "operational-1-1"
+      },
+      {
+        "id": "edge-operational-1-2",
+        "source": "operational-1",
+        "target": "operational-1-2"
+      },
+      {
+        "id": "edge-operational-2",
+        "source": "operational",
+        "target": "operational-2"
+      },
+      {
+        "id": "edge-operational-2-1",
+        "source": "operational-2",
+        "target": "operational-2-1"
+      },
+      {
+        "id": "edge-operational-2-2",
+        "source": "operational-2",
+        "target": "operational-2-2"
+      },
+      {
+        "id": "edge-operational-3",
+        "source": "operational",
+        "target": "operational-3"
+      },
+      {
+        "id": "edge-operational-3-1",
+        "source": "operational-3",
+        "target": "operational-3-1"
+      },
+      {
+        "id": "edge-operational-3-2",
+        "source": "operational-3",
+        "target": "operational-3-2"
+      },
+      {
+        "id": "edge-operational-3-3",
+        "source": "operational-3",
+        "target": "operational-3-3"
+      },
+      {
+        "id": "edge-operational-4",
+        "source": "operational",
+        "target": "operational-4"
+      },
+      {
+        "id": "edge-operational-4-1",
+        "source": "operational-4",
+        "target": "operational-4-1"
+      },
+      {
+        "id": "edge-operational-4-2",
+        "source": "operational-4",
+        "target": "operational-4-2"
+      },
+      {
+        "id": "edge-operational-4-3",
+        "source": "operational-4",
+        "target": "operational-4-3"
+      },
+      {
+        "id": "edge-operational-5",
+        "source": "operational",
+        "target": "operational-5"
+      },
+      {
+        "id": "edge-operational-5-1",
+        "source": "operational-5",
+        "target": "operational-5-1"
+      },
+      {
+        "id": "edge-operational-5-2",
+        "source": "operational-5",
+        "target": "operational-5-2"
+      },
+      {
+        "id": "edge-root-risk-opportunity",
+        "source": "root",
+        "target": "risk-opportunity"
+      },
+      {
+        "id": "edge-risk-opportunity-1",
+        "source": "risk-opportunity",
+        "target": "risk-opportunity-1"
+      },
+      {
+        "id": "edge-risk-opportunity-1-1",
+        "source": "risk-opportunity-1",
+        "target": "risk-opportunity-1-1"
+      },
+      {
+        "id": "edge-risk-opportunity-1-2",
+        "source": "risk-opportunity-1",
+        "target": "risk-opportunity-1-2"
+      },
+      {
+        "id": "edge-risk-opportunity-2",
+        "source": "risk-opportunity",
+        "target": "risk-opportunity-2"
+      },
+      {
+        "id": "edge-risk-opportunity-2-1",
+        "source": "risk-opportunity-2",
+        "target": "risk-opportunity-2-1"
+      },
+      {
+        "id": "edge-risk-opportunity-2-2",
+        "source": "risk-opportunity-2",
+        "target": "risk-opportunity-2-2"
+      },
+      {
+        "id": "edge-risk-opportunity-3",
+        "source": "risk-opportunity",
+        "target": "risk-opportunity-3"
+      },
+      {
+        "id": "edge-risk-opportunity-3-1",
+        "source": "risk-opportunity-3",
+        "target": "risk-opportunity-3-1"
+      },
+      {
+        "id": "edge-risk-opportunity-3-2",
+        "source": "risk-opportunity-3",
+        "target": "risk-opportunity-3-2"
+      },
+      {
+        "id": "edge-risk-opportunity-4",
+        "source": "risk-opportunity",
+        "target": "risk-opportunity-4"
+      },
+      {
+        "id": "edge-risk-opportunity-4-1",
+        "source": "risk-opportunity-4",
+        "target": "risk-opportunity-4-1"
+      },
+      {
+        "id": "edge-risk-opportunity-5",
+        "source": "risk-opportunity",
+        "target": "risk-opportunity-5"
+      },
+      {
+        "id": "edge-risk-opportunity-5-1",
+        "source": "risk-opportunity-5",
+        "target": "risk-opportunity-5-1"
+      },
+      {
+        "id": "edge-root-action-plan",
+        "source": "root",
+        "target": "action-plan"
+      },
+      {
+        "id": "edge-action-plan-1",
+        "source": "action-plan",
+        "target": "action-plan-1"
+      },
+      {
+        "id": "edge-action-plan-1-1",
+        "source": "action-plan-1",
+        "target": "action-plan-1-1"
+      },
+      {
+        "id": "edge-action-plan-1-2",
+        "source": "action-plan-1",
+        "target": "action-plan-1-2"
+      },
+      {
+        "id": "edge-action-plan-2",
+        "source": "action-plan",
+        "target": "action-plan-2"
+      },
+      {
+        "id": "edge-action-plan-2-1",
+        "source": "action-plan-2",
+        "target": "action-plan-2-1"
+      },
+      {
+        "id": "edge-action-plan-2-2",
+        "source": "action-plan-2",
+        "target": "action-plan-2-2"
+      },
+      {
+        "id": "edge-action-plan-3",
+        "source": "action-plan",
+        "target": "action-plan-3"
+      },
+      {
+        "id": "edge-action-plan-3-1",
+        "source": "action-plan-3",
+        "target": "action-plan-3-1"
+      },
+      {
+        "id": "edge-action-plan-3-2",
+        "source": "action-plan-3",
+        "target": "action-plan-3-2"
+      }
+    ]
+  },
+  "usage_report": {
+    "task_id": "01e09490-44e4-4f34-9472-1deaa5e3ce65",
+    "service_type": "meeting_notes",
+    "timestamp": "2025-09-11T13:28:24.573751",
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 1881,
+      "audio_input_tokens": 27514,
+      "image_count": null
+    },
+    "cost_calculation": {
+      "input_cost": 0.0,
+      "output_cost": 0.002351,
+      "audio_cost": 0.013757,
+      "image_cost": 0.0,
+      "total_cost": 0.016108
+    }
+  }
+}

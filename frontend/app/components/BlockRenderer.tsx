@@ -141,7 +141,27 @@ function BulletListBlock({ content }: { content: any }) {
 }
 
 function ToggleListBlock({ content }: { content: any }) {
-  const summary = typeof content?.summary === 'string' ? content.summary : JSON.stringify(content?.summary || '摘要');
+  // 檢查是否有有效內容
+  const hasValidDetails = () => {
+    if (typeof content?.details === 'string' && content.details.trim() && content.details !== '無詳細內容') {
+      return true;
+    }
+    if (Array.isArray(content?.details) && content.details.length > 0) {
+      return content.details.some(block => 
+        block?.type === 'bullet_list' && 
+        Array.isArray(block?.content?.items) && 
+        block.content.items.length > 0
+      );
+    }
+    return false;
+  };
+  
+  // 如果沒有有效內容，不渲染這個區塊
+  if (!hasValidDetails()) {
+    return null;
+  }
+  
+  const summary = typeof content?.summary === 'string' ? content.summary : '摘要';
   
   // 處理 details 欄位的嵌套結構
   const renderDetails = () => {
@@ -172,7 +192,7 @@ function ToggleListBlock({ content }: { content: any }) {
       );
     }
     
-    return <p className="text-gray-500">{JSON.stringify(content?.details || '無詳細內容')}</p>;
+    return null;
   };
   
   return (

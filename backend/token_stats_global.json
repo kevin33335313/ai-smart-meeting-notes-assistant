@@ -1,21 +1,21 @@
 {
   "total": {
-    "input": 250098,
-    "output": 37386,
-    "cost": 0.49955250000000007
+    "input": 252182,
+    "output": 38070,
+    "cost": 0.5055775
   },
   "services": {
     "invoice_ocr": {
-      "input": 22298,
-      "output": 2418,
-      "cost": 0.0399625,
+      "input": 24372,
+      "output": 2542,
+      "cost": 0.043175,
       "audio_input": 0,
-      "image_count": 11
+      "image_count": 12
     },
     "legacy": {
-      "input": 29339,
-      "output": 2590,
-      "cost": 0.04962375,
+      "input": 29349,
+      "output": 3150,
+      "cost": 0.052436250000000004,
       "audio_input": 0,
       "image_count": 0
     },
@@ -25,6 +25,13 @@
       "cost": 0.40996625000000003,
       "audio_input": 0,
       "image_count": 0
+    },
+    "icon_generator": {
+      "input": 0,
+      "output": 0,
+      "cost": 0.0,
+      "audio_input": 0,
+      "image_count": 6
     }
   }
 }

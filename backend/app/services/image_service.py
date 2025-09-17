@@ -82,7 +82,7 @@ async def generate_poster_from_prompt_and_image(prompt: str, text_content: str =
                 image_type="standard"
             )
             
-            return f"/generated_images/{image_path.name}", usage_report
+            return str(image_path), usage_report
         else:
             raise Exception("No images generated")
 
@@ -96,31 +96,36 @@ async def generate_poster_from_prompt_and_image(prompt: str, text_content: str =
             service_type="icon_generator",
             token_usage=TokenUsage(input_tokens=total_input_tokens, output_tokens=total_output_tokens)
         )
-        return placeholder_path, error_usage
+        return str(placeholder_path), error_usage
 
 async def create_placeholder_image(error_text: str) -> str:
     """創建佔位符圖像"""
     placeholder_id = str(uuid.uuid4())
     placeholder_path = IMAGES_DIR / f"placeholder_{placeholder_id}.png"
     
-    img = Image.new('RGB', (800, 600), color=(240, 240, 240))
+    img = Image.new('RGB', (512, 512), color=(240, 240, 240))
     draw = ImageDraw.Draw(img)
     
     try:
-        font = ImageFont.truetype("arial.ttf", 24)
+        font = ImageFont.truetype("arial.ttf", 20)
     except IOError:
         font = ImageFont.load_default()
     
-    text = f"海報生成失敗\n\n{error_text}"
+    # 根據錯誤類型調整文字
+    if "Icon" in error_text:
+        text = f"圖示生成失敗\n\n{error_text}"
+    else:
+        text = f"海報生成失敗\n\n{error_text}"
+        
     bbox = draw.textbbox((0, 0), text, font=font)
     text_width = bbox[2] - bbox[0]
     text_height = bbox[3] - bbox[1]
-    x = (800 - text_width) / 2
-    y = (600 - text_height) / 2
+    x = (img.width - text_width) / 2
+    y = (img.height - text_height) / 2
     draw.multiline_text((x, y), text, font=font, fill=(100, 100, 100), align='center')
     
     img.save(placeholder_path)
-    return f"/generated_images/{placeholder_path.name}"
+    return str(placeholder_path)
 
 async def add_text_to_poster(image_path: Path, text_content: str) -> str:
     """在生成的設計上添加正確的中文文字"""
@@ -213,3 +218,44 @@ Output the enhanced prompt:
     except Exception as e:
         print(f"Prompt combination error: {e}")
         return f"{poster_prompt}, incorporating elements from: {image_description}", TokenUsage()
+
+async def generate_image_from_prompt(prompt: str) -> str:
+    """使用 Gemini Imagen 生成圖示"""
+    
+    if not client:
+        return await create_placeholder_image("API Key Not Found")
+    
+    try:
+        print(f"Generating icon with prompt: {prompt}")
+        
+        # 使用 Imagen API 生成圖片
+        response = client.models.generate_images(
+            model='imagen-4.0-generate-001',
+            prompt=prompt,
+            config=types.GenerateImagesConfig(
+                number_of_images=1,
+            )
+        )
+        
+        if response.generated_images:
+            generated_image = response.generated_images[0]
+            image_id = str(uuid.uuid4())
+            image_path = IMAGES_DIR / f"{image_id}.png"
+            
+            # 保存圖片
+            generated_image.image.save(image_path)
+            
+            print(f"Saved icon: {image_path}")
+            
+            # 記錄 token 使用量
+            from .token_service import get_token_service
+            token_service = get_token_service()
+            token_service.record_usage("icon_generator", 0, 0, 0, 1)
+            
+            return str(image_path)
+        else:
+            raise Exception("No images generated")
+            
+    except Exception as e:
+        print(f"Icon generation error: {e}")
+        return await create_placeholder_image(f"Icon Generation Error: {e}")

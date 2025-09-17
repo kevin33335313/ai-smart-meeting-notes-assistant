@@ -1,0 +1,347 @@
+{
+  "content_blocks": [
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "第五案：全民健康保險特殊材料相關報告"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "全民健康保險已給付特殊材料支付標準異動之處核情形報告 (共85項)",
+          "醫療器材許可證註銷及刪除產品型號 (共85項)",
+          "參閱頁碼：第五之一頁至第五十九頁 (項次1至85)",
+          "總頁碼：191至199頁"
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "content": {
+        "icon": "📋",
+        "style": "info",
+        "text": "請各位代表翻至總頁碼第199頁，項次81 (特材中文品名：因弗梅血漿成分分離器)。"
+      }
+    },
+    {
+      "type": "toggle_list",
+      "content": {
+        "text": "項次81：因弗梅血漿成分分離器",
+        "children": [
+          {
+            "type": "bullet_list",
+            "content": {
+              "items": [
+                "說明：",
+                "許可證已逾期，廠商表示尚有庫存488組，最後一批效期至113年10月31日。",
+                "該特材用於急重症醫療，具臨床必要性。",
+                "決議：",
+                "依「全民健康保險藥物給付項目及支付標準第六之一條第一項」規定，延長給付日期。",
+                "延長至該品項最後一批有效期限截止日之前一季的第一個月一日。",
+                "自113年7月2日起，支付點數調整為零。"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議進度"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "第五案經委員確認後照案通過。",
+          "會議進入第六案。"
+        ]
+      }
+    }
+  ],
+  "action_items": [],
+  "mindmap_structure": {
+    "nodes": [
+      {
+        "id": "root",
+        "data": {
+          "label": "健保特材報告審議",
+          "level": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategy_decision",
+        "data": {
+          "label": "議案審核",
+          "level": 1,
+          "direction": "right",
+          "color": "#2563eb",
+          "icon": "🎯"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "ops_content",
+        "data": {
+          "label": "報告內容",
+          "level": 1,
+          "direction": "left",
+          "color": "#16a34a",
+          "icon": "📊"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "focus_points",
+        "data": {
+          "label": "重點關注",
+          "level": 1,
+          "direction": "right",
+          "color": "#ea580c",
+          "icon": "⚠️"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action_progress",
+        "data": {
+          "label": "會議進程",
+          "level": 1,
+          "direction": "left",
+          "color": "#9333ea",
+          "icon": "✅"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_decision_pass",
+        "data": {
+          "label": "第五案通過",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_decision_confirm",
+        "data": {
+          "label": "委員已確認",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_content_payment",
+        "data": {
+          "label": "特材支付異動",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_content_license",
+        "data": {
+          "label": "醫材許可註銷",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_content_total",
+        "data": {
+          "label": "共85項目",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_content_pages",
+        "data": {
+          "label": "頁碼參考",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_focus_page",
+        "data": {
+          "label": "翻閱總頁199",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_focus_item",
+        "data": {
+          "label": "關注項次81",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_focus_name",
+        "data": {
+          "label": "血漿分離器",
+          "level": 2,
+          "color": "#ea580c"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_action_conclude",
+        "data": {
+          "label": "第五案已結",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "sub_action_next",
+        "data": {
+          "label": "進入第六案",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-root-strategy_decision",
+        "source": "root",
+        "target": "strategy_decision"
+      },
+      {
+        "id": "edge-root-ops_content",
+        "source": "root",
+        "target": "ops_content"
+      },
+      {
+        "id": "edge-root-focus_points",
+        "source": "root",
+        "target": "focus_points"
+      },
+      {
+        "id": "edge-root-action_progress",
+        "source": "root",
+        "target": "action_progress"
+      },
+      {
+        "id": "edge-strategy_decision-sub_decision_pass",
+        "source": "strategy_decision",
+        "target": "sub_decision_pass"
+      },
+      {
+        "id": "edge-strategy_decision-sub_decision_confirm",
+        "source": "strategy_decision",
+        "target": "sub_decision_confirm"
+      },
+      {
+        "id": "edge-ops_content-sub_content_payment",
+        "source": "ops_content",
+        "target": "sub_content_payment"
+      },
+      {
+        "id": "edge-ops_content-sub_content_license",
+        "source": "ops_content",
+        "target": "sub_content_license"
+      },
+      {
+        "id": "edge-ops_content-sub_content_total",
+        "source": "ops_content",
+        "target": "sub_content_total"
+      },
+      {
+        "id": "edge-ops_content-sub_content_pages",
+        "source": "ops_content",
+        "target": "sub_content_pages"
+      },
+      {
+        "id": "edge-focus_points-sub_focus_page",
+        "source": "focus_points",
+        "target": "sub_focus_page"
+      },
+      {
+        "id": "edge-focus_points-sub_focus_item",
+        "source": "focus_points",
+        "target": "sub_focus_item"
+      },
+      {
+        "id": "edge-focus_points-sub_focus_name",
+        "source": "focus_points",
+        "target": "sub_focus_name"
+      },
+      {
+        "id": "edge-action_progress-sub_action_conclude",
+        "source": "action_progress",
+        "target": "sub_action_conclude"
+      },
+      {
+        "id": "edge-action_progress-sub_action_next",
+        "source": "action_progress",
+        "target": "sub_action_next"
+      }
+    ]
+  }
+}

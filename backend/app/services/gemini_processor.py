@@ -17,6 +17,36 @@ if GEMINI_API_KEY:
 # 全域任務儲存
 task_store: Dict[str, Dict[str, Any]] = {}
 
+def _load_task_store_from_notes():
+    """從筆記管理器載入任務到 task_store"""
+    try:
+        from .notes_manager import notes_manager
+        
+        # 載入所有已保存的筆記到 task_store
+        loaded_count = 0
+        for task_id, note_info in notes_manager.notes_index.items():
+            if task_id not in task_store:
+                # 載入完整筆記內容
+                full_note = notes_manager.get_note(task_id)
+                if full_note:
+                    task_store[task_id] = {
+                        "status": "completed",
+                        "filename": note_info["filename"],
+                        "created_at": note_info["created_at"],
+                        "result": full_note
+                    }
+                    loaded_count += 1
+        print(f"已從筆記管理器載入 {loaded_count} 個任務")
+    except Exception as e:
+        print(f"載入任務存儲失敗: {e}")
+
+def reload_task_store():
+    """重新載入任務存儲（用於 API 呼叫）"""
+    _load_task_store_from_notes()
+
+# 啟動時載入已存在的筆記
+_load_task_store_from_notes()
+
 async def process_audio_with_gemini(audio_file_path: str) -> NoteResult:
     """使用 Gemini 2.5 Flash 處理音頻檔案並返回結構化結果"""
     print(f"Uploading file to Gemini: {audio_file_path}")
@@ -133,6 +163,25 @@ async def process_audio_task(task_id: str, file_path: str):
         result = await process_audio_with_gemini(file_path)
         task_store[task_id]["status"] = "completed"
         task_store[task_id]["result"] = result
+        
+        # 自動保存筆記到 notes_manager
+        try:
+            from .notes_manager import notes_manager
+            filename = task_store[task_id].get("filename", "未知檔案")
+            
+            # 將 Pydantic 模型轉換為字典
+            if hasattr(result, 'model_dump'):
+                result_dict = result.model_dump()
+            elif hasattr(result, 'dict'):
+                result_dict = result.dict()
+            else:
+                result_dict = result
+            
+            notes_manager.save_note(task_id, filename, result_dict)
+            print(f"筆記已自動保存: {task_id}")
+        except Exception as save_error:
+            print(f"保存筆記失敗: {save_error}")
+            
     except Exception as e:
         task_store[task_id]["status"] = "failed"
         task_store[task_id]["error"] = str(e)

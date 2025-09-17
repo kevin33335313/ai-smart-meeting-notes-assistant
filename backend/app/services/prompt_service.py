@@ -118,8 +118,8 @@ async def _generate_fallback_prompt(text_content: str, style: str, poster_type: 
         
         # 更新全局 token 統計
         token_service.update_token_stats(
-            prompt_usage.text_input_tokens,
-            prompt_usage.text_output_tokens
+            prompt_usage.input_tokens,
+            prompt_usage.output_tokens
         )
         
         return generated_prompt, prompt_usage
@@ -129,3 +129,58 @@ async def _generate_fallback_prompt(text_content: str, style: str, poster_type: 
         # 最終備用 prompt
         fallback_prompt = f"Professional poster background design with visual elements and clean composition, {style_prompts.get(style, style_prompts['modern'])}, space for text overlay, no text, no letters, no words"
         return fallback_prompt, TokenUsage()
+
+async def enhance_prompt_for_icon(subject: str, style: str, composition: str) -> str:
+    """為圖示生成增強提示詞"""
+    
+    # 風格定義
+    style_prompts = {
+        'modern': 'clean modern minimalist icon, flat design, simple geometric shapes, professional appearance',
+        'corporate': 'corporate business icon, formal professional style, clean lines, trustworthy appearance',
+        'creative': 'creative artistic icon, vibrant colors, dynamic design, engaging visual style',
+        'minimal': 'ultra-minimal icon, simple clean design, monochromatic, essential elements only'
+    }
+    
+    # 構圖定義
+    composition_prompts = {
+        'centered': 'centered composition, balanced layout, symmetrical design',
+        'dynamic': 'dynamic composition, asymmetrical layout, energetic positioning',
+        'corner': 'corner-focused composition, diagonal emphasis, modern placement'
+    }
+    
+    try:
+        model = genai.GenerativeModel('gemini-2.5-flash')
+        
+        prompt_generation = model.generate_content(f"""
+你是一位專業的圖示設計師。請為以下需求生成一個高品質的 Imagen prompt：
+
+主題：{subject}
+風格：{style}
+構圖：{composition}
+
+**要求：**
+1. 生成透明背景的 PNG 圖示
+2. 簡潔清晰，適合用於網站和 UI 設計
+3. 專業品質，符合現代設計標準
+4. 無文字，純圖形設計
+
+直接輸出英文 prompt（必須包含 "transparent background, PNG format, no text"）：
+""")
+        
+        enhanced_prompt = prompt_generation.text.strip()
+        
+        # 記錄 token 使用量
+        from .usage_tracker import UsageTracker
+        usage = UsageTracker.extract_token_usage_from_response(prompt_generation, "text")
+        token_service.update_token_stats(usage.input_tokens, usage.output_tokens)
+        
+        return enhanced_prompt
+        
+    except Exception as e:
+        print(f"Icon prompt enhancement error: {e}")
+        # 備用 prompt
+        style_desc = style_prompts.get(style, style_prompts['modern'])
+        comp_desc = composition_prompts.get(composition, composition_prompts['centered'])
+        
+        fallback_prompt = f"{subject} icon, {style_desc}, {comp_desc}, transparent background, PNG format, no text, high quality design"
+        return fallback_prompt

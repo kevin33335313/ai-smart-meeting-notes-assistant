@@ -86,6 +86,27 @@ class TokenService:
                 "total_tokens": self.total_tokens["input"] + self.total_tokens["output"],
                 "total_cost_usd": self.total_tokens["cost"]
             }
+    
+    def get_service_stats(self, service: str) -> Dict:
+        """獲取特定服務的統計信息"""
+        return self.get_stats(service)
+    
+    def get_all_stats(self) -> Dict:
+        """獲取所有統計信息"""
+        return {
+            "total": self.get_stats(),
+            "services": {service: self.get_stats(service) for service in self.service_stats.keys()}
+        }
 
 # 全局實例
-token_service = TokenService()
+_global_token_service = None
+
+def get_token_service():
+    """獲取全局 TokenService 實例"""
+    global _global_token_service
+    if _global_token_service is None:
+        _global_token_service = TokenService()
+    return _global_token_service
+
+# 向下相容
+token_service = get_token_service()

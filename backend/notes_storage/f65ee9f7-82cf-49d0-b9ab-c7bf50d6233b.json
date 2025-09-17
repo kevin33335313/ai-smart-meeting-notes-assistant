@@ -1,0 +1,277 @@
+{
+  "content_blocks": [
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "全民健康保險已給付特殊材料支付標準異動之出合情形報告 (第5案)"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "本次報告共85項醫療器材許可證註銷及刪除產品型號。",
+          "詳細內容請參考第5之1頁至5之9頁，總頁碼191至199頁 (項次1至85)。"
+        ]
+      }
+    },
+    {
+      "type": "toggle_list",
+      "content": {
+        "title": "項次81：因弗梅血漿成分分離器",
+        "items": [
+          {
+            "type": "bullet_list",
+            "content": {
+              "items": [
+                "中文品名：因弗梅血漿成分分離器",
+                "說明：許可證已逾期。",
+                "廠商來函表示：尚有庫存計488組。",
+                "最候一批有效期限：民國113年10月31日 (2024-10-31)。",
+                "用途：用於急重症醫療之血漿分離器，具臨床必要性。",
+                "依據：全民健康保險藥物給付項目及支付標準第6-1條第1項規定。",
+                "決議：給付日期延長至民國113年7月1日止，自民國113年7月2日起支付點數調整為零。"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "content": {
+        "icon": "📋",
+        "style": "info",
+        "text": "本報告 (第5案) 經討論後，照案通過。會議將進入第6項議程。"
+      }
+    }
+  ],
+  "action_items": [],
+  "mindmap_structure": {
+    "nodes": [
+      {
+        "id": "root",
+        "data": {
+          "label": "健保特殊材料支付異動報告 (第5案)",
+          "level": 0
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "report_core_content",
+        "data": {
+          "label": "報告內容重點",
+          "level": 1,
+          "direction": "left",
+          "color": "#16a34a",
+          "icon": "📊"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic_decision_outcome",
+        "data": {
+          "label": "決策與戰略影響",
+          "level": 1,
+          "direction": "right",
+          "color": "#2563eb",
+          "icon": "🎯"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "action_plan_next_steps",
+        "data": {
+          "label": "通過後續行動",
+          "level": 1,
+          "direction": "right",
+          "color": "#9333ea",
+          "icon": "✅"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "report_items",
+        "data": {
+          "label": "85項器材註銷/刪除",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "report_scope",
+        "data": {
+          "label": "特殊材料支付標準",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "report_reference",
+        "data": {
+          "label": "詳閱第5-1至5-9頁",
+          "level": 2,
+          "color": "#16a34a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "decision_made",
+        "data": {
+          "label": "報告照案通過",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "strategic_goal",
+        "data": {
+          "label": "優化健保支付管理",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "efficiency_accuracy",
+        "data": {
+          "label": "提升支付效率與準確",
+          "level": 2,
+          "color": "#2563eb"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "meeting_progression",
+        "data": {
+          "label": "進入第6項議程",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "system_update",
+        "data": {
+          "label": "更新健保支付系統",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "ensure_timeliness",
+        "data": {
+          "label": "確保支付基準時效性",
+          "level": 2,
+          "color": "#9333ea"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-root-report_core_content",
+        "source": "root",
+        "target": "report_core_content"
+      },
+      {
+        "id": "edge-root-strategic_decision_outcome",
+        "source": "root",
+        "target": "strategic_decision_outcome"
+      },
+      {
+        "id": "edge-root-action_plan_next_steps",
+        "source": "root",
+        "target": "action_plan_next_steps"
+      },
+      {
+        "id": "edge-report_core_content-report_items",
+        "source": "report_core_content",
+        "target": "report_items"
+      },
+      {
+        "id": "edge-report_core_content-report_scope",
+        "source": "report_core_content",
+        "target": "report_scope"
+      },
+      {
+        "id": "edge-report_core_content-report_reference",
+        "source": "report_core_content",
+        "target": "report_reference"
+      },
+      {
+        "id": "edge-strategic_decision_outcome-decision_made",
+        "source": "strategic_decision_outcome",
+        "target": "decision_made"
+      },
+      {
+        "id": "edge-strategic_decision_outcome-strategic_goal",
+        "source": "strategic_decision_outcome",
+        "target": "strategic_goal"
+      },
+      {
+        "id": "edge-strategic_decision_outcome-efficiency_accuracy",
+        "source": "strategic_decision_outcome",
+        "target": "efficiency_accuracy"
+      },
+      {
+        "id": "edge-action_plan_next_steps-meeting_progression",
+        "source": "action_plan_next_steps",
+        "target": "meeting_progression"
+      },
+      {
+        "id": "edge-action_plan_next_steps-system_update",
+        "source": "action_plan_next_steps",
+        "target": "system_update"
+      },
+      {
+        "id": "edge-action_plan_next_steps-ensure_timeliness",
+        "source": "action_plan_next_steps",
+        "target": "ensure_timeliness"
+      }
+    ]
+  }
+}

@@ -36,7 +36,10 @@ async def generate_mindmap_from_content_blocks(content_blocks: list) -> ReactFlo
             elif block_dict['type'] == 'callout':
                 text_content += f"\n重要：{block_dict['content']['text']}\n"
             elif block_dict['type'] == 'toggle_list':
-                text_content += f"\n{block_dict['content']['summary']}: {block_dict['content']['details']}\n"
+                summary = block_dict['content'].get('summary', '摘要')
+                details = block_dict['content'].get('details', '')
+                if summary and details:
+                    text_content += f"\n{summary}: {details}\n"
         
         # 商業分析師級別的心智圖生成 Prompt
         prompt = """

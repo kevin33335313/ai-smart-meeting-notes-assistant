@@ -1,0 +1,37 @@
+{
+  "content_blocks": [
+    {
+      "type": "heading_2",
+      "content": {
+        "text": "會議開場與疫情現況說明"
+      }
+    },
+    {
+      "type": "callout",
+      "content": {
+        "icon": "💡",
+        "style": "info",
+        "text": "台灣疫情已進入可逐漸開放的階段，今日會議正常進行。"
+      }
+    },
+    {
+      "type": "bullet_list",
+      "content": {
+        "items": [
+          "仍需持續小心防疫",
+          "請大家保持身體健康"
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "content": {
+        "icon": "🎉",
+        "style": "success",
+        "text": "很高興能與大家開會，現在會議正式開始！"
+      }
+    }
+  ],
+  "action_items": [],
+  "mindmap_structure": null
+}

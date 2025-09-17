@@ -5,6 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { FileText, DollarSign, TrendingUp } from 'lucide-react'
 import { motion } from 'framer-motion'
 
+
 interface Stats {
   total_invoices: number
   total_amount: number
@@ -190,51 +191,31 @@ export default function InvoiceDashboard() {
               </div>
             </div>
           </div>
-          <ResponsiveContainer width="100%" height={300}>
-            <ComposedChart data={frequencyData} margin={{ top: 20, right: 30, left: 20, bottom: 60 }} barCategoryGap="30%">
-              <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
-              <XAxis 
-                dataKey="category" 
-                stroke="#64748b" 
-                angle={-45}
-                textAnchor="end"
-                height={80}
-                fontSize={12}
-              />
-              <YAxis yAxisId="frequency" orientation="left" stroke="#64748b" />
-              <YAxis yAxisId="avgPrice" orientation="right" stroke="#64748b" />
-              <Tooltip 
-                contentStyle={{ 
-                  backgroundColor: 'white', 
-                  border: '1px solid #e2e8f0',
-                  borderRadius: '8px',
-                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-                }}
-                formatter={(value: number, name: string) => {
-                  if (name === 'frequency') {
-                    return [`${value} 次`, '消費次數']
-                  }
-                  return [`NT$ ${Math.round(value).toLocaleString()}`, '平均單價']
-                }}
-              />
-              <Bar 
-                yAxisId="frequency"
-                dataKey="frequency" 
-                fill="#86efac" 
-                radius={[4, 4, 0, 0]}
-                name="frequency"
-              />
-              <Line 
-                yAxisId="avgPrice"
-                type="monotone" 
-                dataKey="avgPrice" 
-                stroke="#3b82f6" 
-                strokeWidth={3}
-                dot={{ fill: '#3b82f6', strokeWidth: 2, r: 4 }}
-                name="avgPrice"
-              />
-            </ComposedChart>
-          </ResponsiveContainer>
+          <div className="h-72">
+            <ResponsiveContainer width="100%" height="100%">
+              <ComposedChart data={frequencyData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                <XAxis 
+                  dataKey="category" 
+                  tick={{ fontSize: 12 }}
+                  angle={-45}
+                  textAnchor="end"
+                  height={60}
+                />
+                <YAxis yAxisId="left" tick={{ fontSize: 12 }} />
+                <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 12 }} />
+                <Tooltip 
+                  formatter={(value, name) => [
+                    name === 'frequency' ? `${value} 次` : `NT$ ${Math.round(Number(value)).toLocaleString()}`,
+                    name === 'frequency' ? '消費次數' : '平均單價'
+                  ]}
+                  labelFormatter={(label) => `類別: ${label}`}
+                />
+                <Bar yAxisId="left" dataKey="frequency" fill="#86efac" name="frequency" />
+                <Line yAxisId="right" type="monotone" dataKey="avgPrice" stroke="#3b82f6" strokeWidth={2} name="avgPrice" />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </div>
         </motion.div>
 
         {/* 類別分布圓餅圖 */}
@@ -244,31 +225,29 @@ export default function InvoiceDashboard() {
           className="bg-white rounded-xl shadow-sm border p-6"
         >
           <h3 className="text-lg font-semibold text-gray-900 mb-6">支出分布</h3>
-          <ResponsiveContainer width="100%" height={300}>
-            <PieChart>
-              <Pie
-                data={stats.category_stats}
-                cx="50%"
-                cy="50%"
-                innerRadius={60}
-                outerRadius={100}
-                paddingAngle={2}
-                dataKey="amount"
-              >
-                {stats.category_stats.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                ))}
-              </Pie>
-              <Tooltip 
-                formatter={(value: number) => [`NT$ ${Math.round(value).toLocaleString()}`, '金額']}
-                contentStyle={{ 
-                  backgroundColor: 'white', 
-                  border: '1px solid #e2e8f0',
-                  borderRadius: '8px'
-                }}
-              />
-            </PieChart>
-          </ResponsiveContainer>
+          <div className="h-72">
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={stats.category_stats.filter(item => item.amount > 0)}
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={40}
+                  outerRadius={80}
+                  paddingAngle={2}
+                  dataKey="amount"
+                >
+                  {stats.category_stats.filter(item => item.amount > 0).map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip 
+                  formatter={(value) => [`NT$ ${Math.round(Number(value)).toLocaleString()}`, '金額']}
+                  labelFormatter={(label) => `類別: ${label}`}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
           <div className="mt-4 space-y-2">
             {stats.category_stats.map((item, index) => (
               <div key={item.category} className="flex items-center justify-between text-sm">
@@ -295,31 +274,30 @@ export default function InvoiceDashboard() {
         className="bg-white rounded-xl shadow-sm border p-6"
       >
         <h3 className="text-lg font-semibold text-gray-900 mb-6">類別分析</h3>
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={stats.category_stats} margin={{ top: 20, right: 30, left: 20, bottom: 5 }} barCategoryGap="30%">
-            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
-            <XAxis dataKey="category" stroke="#64748b" />
-            <YAxis stroke="#64748b" />
-            <Tooltip 
-              formatter={(value: number) => [`NT$ ${Math.round(value).toLocaleString()}`, '支出金額']}
-              contentStyle={{ 
-                backgroundColor: 'white', 
-                border: '1px solid #e2e8f0',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-              }}
-            />
-            <Bar 
-              dataKey="amount" 
-              radius={[4, 4, 0, 0]}
-              className="hover:opacity-80 transition-opacity"
-            >
-              {stats.category_stats.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
+        <div className="h-72">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={stats.category_stats.filter(item => item.count > 0)}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+              <XAxis 
+                dataKey="category" 
+                tick={{ fontSize: 12 }}
+                angle={-45}
+                textAnchor="end"
+                height={60}
+              />
+              <YAxis tick={{ fontSize: 12 }} />
+              <Tooltip 
+                formatter={(value, name) => [
+                  name === 'count' ? `${value} 張` : `NT$ ${Math.round(Number(value)).toLocaleString()}`,
+                  name === 'count' ? '發票數量' : '總金額'
+                ]}
+                labelFormatter={(label) => `類別: ${label}`}
+              />
+              <Bar dataKey="count" fill="#f97316" name="count" />
+              <Bar dataKey="amount" fill="#3b82f6" name="amount" />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </motion.div>
 
       {/* 詳細統計表格 */}
